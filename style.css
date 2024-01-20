@@ -56,10 +56,6 @@ li {
   padding-left: 1rem;
 }
 
-ul li::marker {
-  font-size: 0.6rem;
-}
-
 li::marker {
   color: var(--color-primary-600);
   font-weight: var(--font-weight-bold);
