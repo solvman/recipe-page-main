@@ -46,3 +46,153 @@ img {
   display: block;
   max-width: 100%;
 }
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  padding-left: 1rem;
+}
+
+ul li::marker {
+  font-size: 0.6rem;
+}
+
+li::marker {
+  color: var(--color-primary-600);
+  font-weight: var(--font-weight-bold);
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+h1,
+h2 {
+  line-height: 1;
+}
+
+body {
+  color: var(--color-neutral-700);
+  background-color: var(--color-neutral-200);
+  font-family: var(--font-face-default);
+  font-weight: var(--font-weight-regular);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Utility classes */
+
+.heading--large,
+.heading--medium {
+  font-family: var(--font-face-heading);
+  font-weight: var(--font-weight-regular);
+  margin-bottom: 1.5rem;
+}
+
+.heading--large {
+  color: var(--color-neutral-800);
+  font-size: 2.25rem;
+}
+
+.heading--medium {
+  color: var(--color-primary-600);
+  font-size: 1.75rem;
+}
+
+.heading--small {
+  color: var(--color-primary-700);
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-semi-bold);
+  margin-bottom: 1rem;
+}
+
+/* Styles */
+.recipe {
+  background-color: var(--color-neutral-100);
+}
+
+.content {
+  padding: 2.5rem 2rem;
+}
+.separator {
+  border: none;
+  height: 1px;
+  background-color: var(--color-neutral-300);
+}
+.nutrition__body {
+  margin-bottom: 1.5rem;
+}
+
+.flex-group {
+  display: flex;
+}
+
+.flex-group > * {
+  flex: 1;
+}
+
+.nutrition__fact__name {
+  padding-left: 2rem;
+}
+
+.nutrition__fact__value {
+  padding-left: 1rem;
+}
+
+.nutrition__facts > .nutrition__fact:first-child {
+  margin-bottom: 0.75rem;
+}
+
+.nutrition__facts > .nutrition__fact:not(:first-child):not(:last-child) {
+  margin: 0.75rem 0;
+}
+
+.nutrition__facts > .nutrition__fact:last-child {
+  margin-top: 0.75rem;
+}
+
+.recipe__prep-time {
+  padding: 1.5rem;
+  background-color: var(--color-neutral-150);
+  border-radius: 0.75rem;
+}
+
+@media (min-width: 700px) {
+  .recipe {
+    max-width: 736px;
+    margin: 7.6875rem auto;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+  }
+
+  .recipe__img {
+    border-radius: 0.75rem;
+  }
+
+  .content {
+    padding: 2.5rem 0 0;
+  }
+
+  .heading--large {
+    font-size: 2.5rem;
+  }
+
+  .recipe__prep-time {
+    padding: 1.75rem;
+  }
+}
