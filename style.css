@@ -119,6 +119,7 @@ strong {
 
 /* Styles */
 .recipe {
+  min-width: 375px;
   background-color: var(--color-neutral-100);
 }
 
